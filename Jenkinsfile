@@ -21,7 +21,7 @@ pipeline{
 		stage('Checkout'){
 			steps{
 				echo "------------>Checkout<------------"
-				checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Git_Centos', submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub_william.clavijo', url: 'https://github.com/willisteven/parqueadero.git']]])
+				checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Git_Centos', submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub_william.clavijo', url: 'https://github.com/willisteven/prueba_estacionamiento.git']]])
 			}
 		}
 		
